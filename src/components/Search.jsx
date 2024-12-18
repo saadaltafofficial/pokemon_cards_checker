@@ -41,8 +41,8 @@ function Search() {
   return (
     <>
       <Header />
-      <main className="bg-[#FFCC00] h-[100vh] font-[inter] flex flex-col py-12 px-8 tablet:px-40">
-        <section className="flex flex-col">
+      <main className="bg-[#FFCC00] h-[100vh] font-[inter] flex flex-col py-12 px-8 tablet:px-40 items-center">
+        <section className="flex flex-col max-w-[1200px] w-full">
           <h1 className="font-[Anton] text-3xl text-[#E52441] text-center">Search your Pokémon with id.</h1>
           <form
             onSubmit={handleSubmit}
@@ -70,7 +70,7 @@ function Search() {
               <img src={pokemonData.sprites.front_default} alt={pokemonData.name} className="bg-[#ebeaea] rounded-[1rem] w-[400px] object-cover h-full border-4 border-[#E52441]" />
             </div>
             <div>
-              <h1 className="font-[Anton] text-3xl mb-4">{pokemonData.name}<hr/></h1>
+              <h1 className="font-[Anton] text-3xl mb-4 underline">{pokemonData.name}</h1>
               <p className="fon-[inter] font-bold">Weight: <span className="font-normal">{pokemonData.weight}</span></p>
               <p className="fon-[inter] font-bold">height: <span className="font-normal">{pokemonData.height}</span></p>
               <p className="fon-[inter] font-bold">Base Experience: <span className="font-normal">{pokemonData.base_experience}</span></p>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 function Header() {
     return (
         <header className="flex justify-center bg-[#E52441] px-6 py-4">
-            <nav className="flex justify-between w-full items-center">
+            <nav className="flex justify-between max-w-[1200px] w-full items-center">
                 <Link to="/">
                 <img src="src/assets/Logo.png" alt="Pokemon Radar Logo image" className="w-[180px]" />
                 </Link>
